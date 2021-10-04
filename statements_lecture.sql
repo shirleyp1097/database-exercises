@@ -47,20 +47,19 @@ CREATE TABLE quotes (
 
 # ================================= SELECT STATEMENTS
 
-                                                                 # Select All
+# Select All
+SELECT * FROM albums;
 
 # Select Specific Columns
+Select id, artist, name FROM albums;
 
-                                                                         # Where clause
+show tables;
+
+# Where clause
 
 # Operators
 
 # Miscellaneous Output
-
-
-
-
-
 
 
 -- ================================= UPDATE STATEMENTS (UPDATE)
