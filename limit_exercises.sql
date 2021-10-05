@@ -10,6 +10,6 @@ SELECT emp_no FROM salaries
 ORDER BY salary DESC
 LIMIT 5;
 
-SELECT emp_no FROM salaries
+SELECT * FROM salaries
 ORDER BY salary DESC
 LIMIT 5 OFFSET 50;
