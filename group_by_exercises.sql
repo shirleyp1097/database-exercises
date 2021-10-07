@@ -42,7 +42,10 @@ SELECT MAX(emp_no), title FROM titles
 WHERE title LIKE '%engineer%'
 GROUP BY title;
 
-SELECT emp_no FROM employees;
+DESCRIBE employees;
+
+SELECT emp_no FROM employees
+WHERE title LIKE '%engineer%';
 
 # what are the names of the 10 most recently hired females in the company? the first 10? (no group by needed)
 # what are the top three most common job titles?
