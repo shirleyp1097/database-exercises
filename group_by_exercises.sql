@@ -44,9 +44,6 @@ GROUP BY title;
 
 DESCRIBE employees;
 
-SELECT emp_no FROM employees
-WHERE title LIKE '%engineer%';
-
 # what are the names of the 10 most recently hired females in the company? the first 10? (no group by needed)
 # what are the top three most common job titles?
 # what is the most common ‘from date’ for job titles? for staff only?
