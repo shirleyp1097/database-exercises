@@ -1,4 +1,8 @@
+CREATE DATABASE candy_db;
+
 USE employees;
+
+SELECT * FROM titles;
 
 SELECT * FROM employees
     WHERE hire_date =
@@ -9,7 +13,7 @@ SELECT first_name, last_name, title FROM employees
 JOIN titles t ON employees.emp_no = t.emp_no
     WHERE first_name IN
 (SELECT first_name FROM employees
-WHERE first_name = 'Aamod')
+WHERE first_name = 'Aamod');
 
 SELECT first_name, last_name FROM employees
 JOIN (
@@ -17,8 +21,7 @@ JOIN (
     WHERE to_date > NOW()
 ) AS managers ON employees.emp_no = managers.emp_no
 JOIN current_dept_emp cde on employees.emp_no = cde.emp_no
-WHERE gender = 'F'
-;
+WHERE gender = 'F';
 
 SELECT dept_name FROM departments
 JOIN dept_manager dm on departments.dept_no = dm.dept_no
